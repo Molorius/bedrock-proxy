@@ -1,0 +1,14 @@
+[Unit]
+Description=Proxy Server for Minecraft Bedrock
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=nobody
+ExecStart=/usr/local/bin/bedrock-proxy
+Nice=-2
+
+[Install]
+WantedBy=multi-user.target
