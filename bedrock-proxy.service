@@ -7,7 +7,7 @@ Type=simple
 Restart=always
 RestartSec=5
 User=nobody
-ExecStart=/usr/local/bin/bedrock-proxy
+ExecStart=/usr/local/bin/bedrock-proxy exampleserver.com 19132
 Nice=-2
 
 [Install]

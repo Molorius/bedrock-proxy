@@ -18,9 +18,13 @@ in main.c. Then compile with `make` in the terminal.
 Running
 =======
 
-Run by typing `./bedrock-proxy` into the terminal on your main device. Both the
-Xbox and the device running this need to be on the same network. You should find
-the server you want in the Minecraft Friends section under LAN Games.
+Run the program itself with `./bedrock-proxy <server-address> <server-port> <max
+_clients> <timeout>` into the terminal on your main device. Server address and port
+arguments are required. Max clients and timeout(in seconds) arguments are optional
+and default to 40 and 15 respectively.
+
+Both the Xbox and the device running this need to be on the same network. You
+should find the server you want in the Minecraft Friends section under LAN Games.
 
 I have included an example systemd service file to start this automatically at boot
 for any Linux users of systemd.
